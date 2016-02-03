@@ -4,7 +4,7 @@ Theme base for development in Shift
 ## Instalación
 Para instalar todas las dependencias para constuir el theme basado en foundation ejecutar:
    
-    npm instal
+    npm install
 
 Esto nos baja foundation y las dependencias gulp que utilizamos en este tema.
 
