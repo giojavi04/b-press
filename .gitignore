@@ -1,4 +1,6 @@
 *.log
+.DS_Store
+prepros.cfg
 .htaccess
 sitemap.xml
 sitemap.xml.gz
@@ -12,6 +14,8 @@ wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
+*.sass-cache/*
+node_modules/
 
 /readme.html
 /license.txt
