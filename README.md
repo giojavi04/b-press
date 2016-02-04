@@ -29,7 +29,7 @@ Para ello ocupamos un action_hook que provee cf7 y que únicamente se ejecuta al
 
 El uso de esta función se encuentra documentado en el mismo archivo que se encuentra en:
 
-    assets/functions/save-contact-form.php
+    functions/save-contact-form.php
 
 *Esta función se incluye únicamente cuando el plugin Contact Form 7 está activado.*
 
