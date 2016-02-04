@@ -102,7 +102,7 @@ function shiftpress_custom_pings( $comment )
  * @param  [type] $count [description]
  * @return [type]        [description]
  */
-function shiftpress_comments_number( $count )
+/*function shiftpress_comments_number( $count )
 {
   if ( !is_admin() ) {
     global $id;
@@ -112,7 +112,7 @@ function shiftpress_comments_number( $count )
     return $count;
   }
 }
-add_filter( 'get_comments_number', 'shiftpress_comments_number' );
+add_filter( 'get_comments_number', 'shiftpress_comments_number' );*/
 
 /**
  * [shiftpress_add_editor_styles Optional for asign custom style for tynced editor]
