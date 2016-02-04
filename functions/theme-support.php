@@ -32,10 +32,10 @@ function shiftpress_setup()
    * @var array
    */
   $defaults = array(
-    'default-image'          => get_template_directory_uri().'/assets/images/logo-frank-palomeque.png',
+    'default-image'          => get_template_directory_uri().'/dist/img/logo.png',
     'random-default'         => false,
-    'width'                  => 266,
-    'height'                 => 105,
+    'width'                  => 196,
+    'height'                 => 78,
     'flex-height'            => false,
     'flex-width'             => false,
     'default-text-color'     => '',
