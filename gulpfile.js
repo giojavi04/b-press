@@ -41,13 +41,13 @@ gulp.task('styles', function() {
 
 /**
  * [JSHint, concat, and minify JavaScript]
- * @param  {[type]} ) {             return gulp.src([	             		  './assets/js/site/*.js'  ])    .pipe(plumber())    .pipe(jshint())    .pipe(jshint.reporter('jshint-stylish'))    .pipe(concat('scripts.js'))    .pipe(gulp.dest('./assets/js/min'))    .pipe(rename({suffix: '.min'}))    .pipe(uglify())    .pipe(gulp.dest('./assets/js/min'))} [description]
+ * @param  {[type]} ) {             return gulp.src([                   './assets/js/site/*.js'  ])    .pipe(plumber())    .pipe(jshint())    .pipe(jshint.reporter('jshint-stylish'))    .pipe(concat('scripts.js'))    .pipe(gulp.dest('./assets/js/min'))    .pipe(rename({suffix: '.min'}))    .pipe(uglify())    .pipe(gulp.dest('./assets/js/min'))} [description]
  * @return {[type]}   [description]
  */
 gulp.task('scripts', function() {
-  return gulp.src([	
+  return gulp.src([ 
            // Grab your custom scripts
-  		  './assets/js/*.js'
+        './assets/js/*.js'
   ])
     .pipe(plumber())
     .pipe(jshint())
@@ -60,46 +60,23 @@ gulp.task('scripts', function() {
 });    
 
 /**
- * [JSHint, concat, and minify JavaScript]
+ * [JSHint, concat, and minify Foundation Sites]
  * @return {[type]} [description]
  */
 gulp.task('foundation-sites-js', function() {
-  return gulp.src([	
-  		  
-  		  // Jquery
-  		  './node_modules/jquery/dist/jquery.js',
-  		  // Foundation core - needed if you want to use any of the components below
-          './node_modules/foundation-sites/js/foundation.core.js',
-          
-          // Pick the componenets you need in your project
-          './node_modules/foundation-sites/js/foundation.abide.js',
-          './node_modules/foundation-sites/js/foundation.accordion.js',
-          './node_modules/foundation-sites/js/foundation.foundation.accordionMenu.js',
-          './node_modules/foundation-sites/js/foundation.foundation.drilldown.js',
-          './node_modules/foundation-sites/js/foundation.foundation.dropdown.js',
-          './node_modules/foundation-sites/js/foundation.foundation.dropdownMenu.js',
-          './node_modules/foundation-sites/js/foundation.foundation.equalizer.js',
-          './node_modules/foundation-sites/js/foundation.foundation.interchange.js',
-          './node_modules/foundation-sites/js/foundation.foundation.magellan.js',
-          './node_modules/foundation-sites/js/foundation.foundation.offcanvas.js',
-          './node_modules/foundation-sites/js/foundation.foundation.orbit.js',
-          './node_modules/foundation-sites/js/foundation.foundation.responsiveMenu.js',
-          './node_modules/foundation-sites/js/foundation.foundation.responsiveToggle.js',
-          './node_modules/foundation-sites/js/foundation.foundation.reveal.js',
-          './node_modules/foundation-sites/js/foundation.foundation.slider.js',
-          './node_modules/foundation-sites/js/foundation.foundation.sticky.js',
-          './node_modules/foundation-sites/js/foundation.foundation.tabs.js',
-          './node_modules/foundation-sites/js/foundation.foundation.toggler.js',
-          './node_modules/foundation-sites/js/foundation.foundation.tooltip.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.box.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.keyboard.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.mediaQuery.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.motion.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.nest.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.timerAndImageLoader.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.touch.js',
-          './node_modules/foundation-sites/js/foundation.foundation.util.triggers.js'
+  return gulp.src([
+          // Jquery
+          './node_modules/jquery/dist/jquery.js',
+
+          //What-input
+          './node_modules/what-input/what-input.js',
+
+          // Foundation
+          './node_modules/foundation-sites/dist/foundation.js',
+
   ])
+    .pipe(plumber())
+    .pipe(jshint())
     .pipe(concat('foundation.js'))
     .pipe(gulp.dest('./dist/js'))
     .pipe(rename({suffix: '.min'}))
@@ -109,11 +86,11 @@ gulp.task('foundation-sites-js', function() {
 
 /**
  * [Create the default task]
- * @param  {[type]} ){	gulp.start('styles', 'scripts',    'foundation-sites-js');	} [description]
+ * @param  {[type]} ){  gulp.start('styles', 'scripts',    'foundation-sites-js');  } [description]
  * @return {[type]}                          [description]
  */
 gulp.task('default', function(){
-	gulp.start('styles', 'scripts', 'foundation-sites-js');	
+  gulp.start('styles', 'scripts', 'foundation-sites-js'); 
 })
 
 gulp.task('watch', function() {
@@ -123,7 +100,7 @@ gulp.task('watch', function() {
 
   // Watch site-js files
   gulp.watch('./assets/js/*.js', ['scripts']);
-  
+
   // Watch foundation-js files
   gulp.watch('./node_modules/foundation-sites/js/*.js', ['foundation-sites-js']);
 
