@@ -2,7 +2,7 @@
 Theme base for development in Shift
 
 ## Instalación
-Para instalar todas las dependencias para constuir el theme basado en foundation ejecutar:
+Para instalar todas las dependencias para constuir el tema basado en foundation ejecutar:
    
     npm install
 
@@ -18,7 +18,7 @@ Requeridos *.
 * [wpMandrill (a prueba para integrar con contact form) *](https://wordpress.org/plugins/wpmandrill/), [funcional - testeado, pero si hay algún error](https://wordpress.org/support/topic/plugin-wpmandrill-compatiblitity-with-other-plugins)
 * [Mailchimp for WordPress](https://mc4wp.com/kb/)
 * [Advanced Custom Fiels](http://www.advancedcustomfields.com/resources/)
-* [Easy Foundation Shortcodes](https://wordpress.org/plugins/easy-foundation-shortcodes/) 
+* [Easy Foundation Shortcodes (No tiene soporte para foundation 6 todavía)](https://wordpress.org/plugins/easy-foundation-shortcodes/)
 
 
 ### Guardar en base al enviar formularios con cf7
@@ -34,8 +34,12 @@ El uso de esta función se encuentra documentado en el mismo archivo que se encu
 *Esta función se incluye únicamente cuando el plugin Contact Form 7 está activado.*
 
 ## Configuración del proyecto
-Todo el tema se manaja bajo gulp, tanto los scripts como los css de igual manera es completamente flexible para trabajar con foundation o boostrap; en este momento está configurado para foundation( por defecto que ocupamos en Shift), para hacer correr estos scripts simplemente basta con ejecutar:
+Todo el tema se manaja bajo gulp dividido en tareas según orden de importancia para el proyecto, tanto los scripts como los css de igual manera es completamente flexible para trabajar con foundation o boostrap; en este momento está configurado para foundation( por defecto que ocupamos en Shift), para hacer correr estos scripts simplemente basta con ejecutar:
 
+	gulp
+
+Y para autocompilar los cambios ejecutar:
+	
 	gulp watch
 
 - - COPYRIGHT & LICENSE - -

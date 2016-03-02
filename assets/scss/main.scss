@@ -1,4 +1,27 @@
-@import 'node_modules/foundation-sites/scss/foundation';
-@include foundation-everything;
+/*---------------------------*\
+	$VARIABLES DEL TEMPLATE
+\*---------------------------*/
+@import 'variables';
 
-// Style for site
+/*---------------------------*\
+	      $FOUNDATION
+\*---------------------------*/
+@import 'node_modules/foundation-sites/scss/foundation';
+@include foundation-everything(true);
+
+/*---------------------------*\
+	    $ANIMATE CSS
+\*---------------------------*/
+@import 'animate';
+
+/*---------------------------*\
+   	   $ESTILOS COMUNES
+\*---------------------------*/
+
+/*---------------------------*\
+   $ESTILOS PARA EL TEMPLATE
+\*---------------------------*/
+
+/*---------------------------*\
+$CLASES GENERALES PARA EL SITIO
+\*---------------------------*/

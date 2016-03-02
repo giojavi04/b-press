@@ -16,7 +16,8 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 *.sass-cache/*
 node_modules/
+dist/css/*
+dist/js/*
 
-/readme.html
-/license.txt
-
+readme.html
+license.txt
