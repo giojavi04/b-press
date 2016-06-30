@@ -1,6 +1,15 @@
 # shift-press
 Theme base for development in Shift
 
+## Tecnologías
+* Html5
+* Css3
+* Php
+* Gulp
+* Sass
+* Responsive Design
+* Multipropósito
+
 ## Instalación
 Para instalar todas las dependencias para constuir el tema basado en foundation ejecutar:
    

@@ -1,3 +1,5 @@
 $(document).foundation();
 
-// Scripts for site
+$(document).ready(function () {
+   //Your code here
+});
