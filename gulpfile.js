@@ -15,7 +15,8 @@ var gulp         = require('gulp'),
     uglify       = require('gulp-uglify'),
     concat       = require('gulp-concat'),
     rename       = require('gulp-rename'),
-    plumber      = require('gulp-plumber')
+    plumber      = require('gulp-plumber'),
+    livereload   = require('gulp-livereload');
 
 /**
  * [Compile Sass, Autoprefix and minify sass inside scss folder on assets]
@@ -36,6 +37,7 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('./dist/css'))
+    .pipe(livereload())
 });
 
 /**
@@ -54,6 +56,7 @@ gulp.task('jquery-js', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
+    .pipe(livereload())
 });
 
 /**
@@ -76,6 +79,7 @@ gulp.task('foundation-sites-js', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
+    .pipe(livereload())
 });
 
 /**
@@ -95,6 +99,7 @@ gulp.task('scripts', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
+    .pipe(livereload())
 });    
 
 /**
@@ -107,6 +112,8 @@ gulp.task('default', function(){
 })
 
 gulp.task('watch', function() {
+  //livereload watch
+  livereload.listen();
 
   // Watch .scss files
   gulp.watch('./assets/scss/**/*.scss', ['styles']);

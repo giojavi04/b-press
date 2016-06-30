@@ -1,7 +1,7 @@
 /*---------------------------*\
-	$VARIABLES DEL TEMPLATE
+  $CONFIGURACIONES DEL TEMPLATE
 \*---------------------------*/
-@import 'variables';
+@import 'settings/settings';
 
 /*---------------------------*\
 	      $FOUNDATION
@@ -12,16 +12,15 @@
 /*---------------------------*\
 	    $ANIMATE CSS
 \*---------------------------*/
-@import 'animate';
+@import 'util/animate';
 
 /*---------------------------*\
    	   $ESTILOS COMUNES
 \*---------------------------*/
+@import 'global';
 
 /*---------------------------*\
    $ESTILOS PARA EL TEMPLATE
 \*---------------------------*/
-
-/*---------------------------*\
-$CLASES GENERALES PARA EL SITIO
-\*---------------------------*/
+@import 'partials/header';
+@import 'partials/footer';
