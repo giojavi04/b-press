@@ -1,4 +1,4 @@
-# shift-press
+# Shift-Press
 Theme base for development in Shift
 
 ## Tecnologías
@@ -6,6 +6,7 @@ Theme base for development in Shift
 * Css3
 * Php
 * Gulp
+* Elixir
 * Sass
 * Responsive Design
 * Multipropósito
@@ -55,13 +56,15 @@ De momento está configurado para usar foundation, después de haber instalado l
 
 	npm run start
 
-generado el archivo procedemos a correr el siguiente comando para correr gulp ya sea con elixir o sin el:
+**si se escogió la opción elixir antes de continuar debes entrar al archivo gulpfile.js generado a cambiar la url de tu sitio en desarrollo.** Una vez generado el archivo procedemos a ejecutar el siguiente comando para correr gulp ya sea con elixir o sin el:
 	
 	npm run dev
 
-para el desarrollo o para producción:
+para el desarrollo o:
 	
 	npm run production
+
+para producción
 
 ####- - COPYRIGHT & LICENSE - -
 

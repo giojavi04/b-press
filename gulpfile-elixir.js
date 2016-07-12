@@ -22,8 +22,9 @@ elixir(function(mix) {
    * @type {String}
    */
   mix.browserSync({
-    proxy: 'wordpress.dev',
-    host: 'wordpress.dev',
+    proxy: 'http://your_url_poject_here',
+    host: 'your_url_poject_here',
+    open: 'external',
     files: [
       './**/*.php',
       elixir.config.publicPath + '/**/*.js',
