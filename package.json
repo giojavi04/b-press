@@ -1,6 +1,6 @@
 {
   "name": "shift-press",
-  "version": "1.0.3",
+  "version": "2.0",
   "description": "Theme based for development in agency Shift",
   "main": "index.js",
   "scripts": {
