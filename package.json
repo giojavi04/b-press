@@ -4,7 +4,10 @@
   "description": "Theme based for development in agency Shift",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "sh structure-development.sh",
+    "dev": "gulp && gulp watch",
+    "production": "gulp --production"
   },
   "repository": {
     "type": "git",
@@ -40,6 +43,8 @@
     "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.2",
-    "jshint-stylish": "^2.x"
+    "jshint-stylish": "^2.x",
+    "laravel-elixir": "^6.0.0-9",
+    "laravel-elixir-browsersync-official": "^1.0.0"
   }
 }

@@ -16,8 +16,10 @@ wp-content/wp-cache-config.php
 wp-content/plugins/hello.php
 *.sass-cache/*
 node_modules/
-dist/css/*
-dist/js/*
+bower_components/
+public/css/*
+public/js/*
+gulpfile.js
 
 readme.html
 license.txt

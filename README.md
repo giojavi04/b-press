@@ -10,13 +10,6 @@ Theme base for development in Shift
 * Responsive Design
 * Multipropósito
 
-## Instalación
-Para instalar todas las dependencias para constuir el tema basado en foundation ejecutar:
-   
-    npm install
-
-Esto nos baja foundation y las dependencias gulp que utilizamos en este tema.
-
 ## Plugins
 Se desactivo la función de plugins necesarios por problemas de testeo pero los plugins comunmente utilizados son:
 
@@ -24,10 +17,9 @@ Requeridos *.
 
 > * [Contact Form 7 *](http://contactform7.com/docs/)
 * [Wordpress SEO by Yoast *](https://yoast.com/wordpress/plugins/seo/api/)
-* [wpMandrill (a prueba para integrar con contact form) *](https://wordpress.org/plugins/wpmandrill/), [funcional - testeado, pero si hay algún error](https://wordpress.org/support/topic/plugin-wpmandrill-compatiblitity-with-other-plugins)
+* [sendgrid *](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/)
 * [Mailchimp for WordPress](https://mc4wp.com/kb/)
 * [Advanced Custom Fiels](http://www.advancedcustomfields.com/resources/)
-* [Easy Foundation Shortcodes (No tiene soporte para foundation 6 todavía)](https://wordpress.org/plugins/easy-foundation-shortcodes/)
 
 
 ### Guardar en base al enviar formularios con cf7
@@ -42,15 +34,35 @@ El uso de esta función se encuentra documentado en el mismo archivo que se encu
 
 *Esta función se incluye únicamente cuando el plugin Contact Form 7 está activado.*
 
+## Instalación
+Para instalar todas las dependencias para constuir el tema basado en foundation ejecutar:
+   
+    npm install
+
+Esto nos baja foundation y las dependencias gulp que utilizamos en este tema.
+
 ## Configuración del proyecto
-Todo el tema se manaja bajo gulp dividido en tareas según orden de importancia para el proyecto, tanto los scripts como los css de igual manera es completamente flexible para trabajar con foundation o boostrap; en este momento está configurado para foundation( por defecto que ocupamos en Shift), para hacer correr estos scripts simplemente basta con ejecutar:
+El tema maneja dos maneras de administrar los assets
 
-	gulp
+* Elixir
+* Solo Gulp
 
-Y para autocompilar los cambios ejecutar:
+Es totalmente flexible para trabajar con foundation o boostrap solo cambiar la importación en:
 	
-	gulp watch
+	resources/assets/main.scss
 
-- - COPYRIGHT & LICENSE - -
+De momento está configurado para usar foundation, después de haber instalado las dependencias con npm install ejecutamos el siguiente comando para generar el archivo de gulp según necesidades ya sea en elixir o simplemente gulp:
+
+	npm run start
+
+generado el archivo procedemos a correr el siguiente comando para correr gulp ya sea con elixir o sin el:
+	
+	npm run dev
+
+para el desarrollo o para producción:
+	
+	npm run production
+
+####- - COPYRIGHT & LICENSE - -
 
 This theme is based on BlankSlate theme
