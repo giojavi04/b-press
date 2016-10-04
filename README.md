@@ -1,5 +1,5 @@
-# Shift-Press
-Theme base for development in Shift
+# B-Press
+Theme base for development in wordpress
 
 ## Tecnologías
 * Html5

@@ -4,10 +4,10 @@
  * [blankslate_widgets_init register widgets for theme]
  * @return [type] [description]
  */
-function shiftpress_widgets_init()
+function bpress_widgets_init()
 {
   register_sidebar( array (
-    'name' => __( 'Sidebar Widget Area', 'shiftpress' ),
+    'name' => __( 'Sidebar Widget Area', 'bpress' ),
     'id' => 'primary-widget-area',
     'before_widget' => '<li id="%1$s" class="widget-container %2$s">',
     'after_widget' => "</li>",
@@ -15,4 +15,4 @@ function shiftpress_widgets_init()
     'after_title' => '</h3>',
     ) );
 }
-add_action( 'widgets_init', 'shiftpress_widgets_init' );
+add_action( 'widgets_init', 'bpress_widgets_init' );

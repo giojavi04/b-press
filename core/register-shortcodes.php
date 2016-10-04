@@ -4,6 +4,8 @@
  * Register here the shortcodes, for the theme
  */
 
+ //Here your shortcodes
+
 /**
  * Formating all shortcodes scapping auto <p></p>
  */

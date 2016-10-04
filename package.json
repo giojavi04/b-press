@@ -1,8 +1,8 @@
 {
-  "name": "shift-press",
-  "version": "2.1.1",
-  "description": "Theme based for development in agency Shift",
-  "main": "index.js",
+  "name": "b-press",
+  "version": "2.2.0",
+  "description": "Theme based for development in wordpress",
+  "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "sh structure-development.sh",
@@ -11,20 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SHIFT-EC/shift-press.git"
+    "url": "git+https://github.com/giojavi04/b-press.git"
   },
   "keywords": [
     "theme",
     "base",
-    "shift",
-    "development"
+    "development",
+    "wordpress"
   ],
   "author": "Javier Montalvo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SHIFT-EC/shift-press/issues"
+    "url": "https://github.com/giojavi04/b-press/issues"
   },
-  "homepage": "https://github.com/SHIFT-EC/shift-press#readme",
+  "homepage": "https://github.com/giojavi04/b-press#readme",
   "dependencies": {
     "foundation-sites": "^6.*"
   },
