@@ -8,7 +8,7 @@ Option_Shift=$number
 if [ $Option_Shift = 1 ]
 then
 	echo "Seleccionaste Elixir"
-	cp --archive ./gulpfile-elixir.js ./gulpfile.js
+	cp ./gulpfile-elixir.js ./gulpfile.js
 	echo "EL archivo gulpfile.js se ha generado correctamente! Puedes usar los comandos de elixir"
 	rm ./gulpfile-elixir.js
 	rm ./gulpfile-gulp.js
@@ -16,7 +16,7 @@ then
 elif [ $Option_Shift = 2 ]
 then
  	echo "Seleccionaste Gulp"
-	cp --archive ./gulpfile-gulp.js ./gulpfile.js
+	cp ./gulpfile-gulp.js ./gulpfile.js
 	echo "EL archivo gulpfile.js se ha generado correctamente!"
 	rm ./gulpfile-elixir.js
 	rm ./gulpfile-gulp.js
