@@ -5,8 +5,8 @@ Theme base for development in wordpress
 * Html5
 * Css3
 * Php
-* Gulp
-* Elixir
+* Webpack
+* Laravel mix
 * Sass
 * Responsive Design
 * Multipropósito
@@ -16,7 +16,7 @@ Se desactivo la función de plugins necesarios por problemas de testeo pero los 
 
 Requeridos *.
 
-> * [Contact Form 7 *](http://contactform7.com/docs/)
+* [Contact Form 7 *](http://contactform7.com/docs/)
 * [Wordpress SEO by Yoast *](https://yoast.com/wordpress/plugins/seo/api/)
 * [sendgrid *](https://wordpress.org/plugins/sendgrid-email-delivery-simplified/)
 * [Mailchimp for WordPress](https://mc4wp.com/kb/)
@@ -33,38 +33,30 @@ El uso de esta función se encuentra documentado en el mismo archivo que se encu
 
     functions/save-contact-form.php
 
-*Esta función se incluye únicamente cuando el plugin Contact Form 7 está activado.*
+* Esta función se incluye únicamente cuando el plugin Contact Form 7 está activado.*
 
 ## Instalación
 Para instalar todas las dependencias para constuir el tema basado en foundation ejecutar:
    
-    npm install
+    yarn install
 
-Esto nos baja foundation y las dependencias gulp que utilizamos en este tema.
+Esto nos baja foundation y las dependencias webpack que utilizamos en este tema.
 
 ## Configuración del proyecto
-El tema maneja dos maneras de administrar los assets
 
-* Elixir
-* Solo Gulp
-
-Es totalmente flexible para trabajar con foundation o boostrap solo cambiar la importación en:
+Es totalmente flexible para trabajar con cualquier framework css, tan solo cambiar la importación en:
 	
 	resources/assets/main.scss
 
-De momento está configurado para usar foundation, después de haber instalado las dependencias con npm install ejecutamos el siguiente comando para generar el archivo de gulp según necesidades ya sea en elixir o simplemente gulp:
-
-	npm run start
-
-**si se escogió la opción elixir antes de continuar debes entrar al archivo gulpfile.js generado a cambiar la url de tu sitio en desarrollo.** Una vez generado el archivo procedemos a ejecutar el siguiente comando para correr gulp ya sea con elixir o sin el:
+tenemos foundation de forma predeterminada, para arrancar la configuración corremos:
 	
-	npm run dev
+	cp -r node_modules/laravel-mix/setup/** ./
 
-para el desarrollo o:
+dentro de los archivos que se generan tras ejecutar el comando anterior, copiamos la configuración del archivo `webpack-example.mix.js` en `webpack.mix.js` y canfigurar si tienes cambios sino dejarlo así, y para empezar el desarrollo ejecutamos:
 	
-	npm run production
+	yarn dev
 
-para producción
+tenemos una serie de comandos disponibles para los diferentes entornos que podemos encontrar en `package.json`
 
 ####- - COPYRIGHT & LICENSE - -
 
